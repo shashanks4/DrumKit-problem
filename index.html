@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet " href="style1.css">
+  <!---  <img src="My-Post-17.Png"> -->
+        <title>Document</title>
+</head>
+<body>
+
+    
+    <button id="A" onkeydown="myFunction(event)">A</button></span>
+    <button id="S" onkeydown="myFunction(event)">S</button>
+    <button id="D" onkeydown="myFunction(event)">D</button>
+    <button id="F" onkeydown="myFunction(event)">F</button>
+    
+    <button id="G" onkeydown="myFunction(event)">G</button>
+
+</body>
+<script>
+function myFunction(event) {
+  var x = event.keyCode;
+  if (x == 65) {  // 27 is the A key
+  playMusic();
+  }
+  else if (x==83){
+      playMusic1();
+  }
+  else if(x==68){
+playMusic2();
+  }
+  else if(x==70){
+      playMusic3();
+  }
+else if(x==71){
+    playMusic4();
+    }    
+else{
+    alert("Press the keys between A-G")
+    }
+ }
+
+function playMusic(){
+  var music = new Audio('.mp3');
+  music.play();
+  }
+  function playMusic1(){
+  var music = new Audio('.mp3');
+  music.play();
+  }
+  function playMusic2(){
+  var music = new Audio('.mp3');
+  music.play();
+  }
+  function playMusic3(){
+  var music = new Audio('.mp3');
+  music.play();
+  }
+  function playMusic4(){
+  var music = new Audio('.mp3');
+  music.play();
+  }
+
+</script>
+</html>
